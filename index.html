@@ -1593,7 +1593,7 @@ const LAUNCHES_REFRESH_MS = 3 * 60 * 60 * 1000; // 3 hours
 window.addEventListener('DOMContentLoaded', () => {
   applyStaticTranslations();
   initIssMap();
-  startIssPolling(2);
+  startIssPolling(0,1);
   fetchApod();
   fetchLaunches();
   setInterval(fetchLaunches, LAUNCHES_REFRESH_MS);
